@@ -11,8 +11,11 @@ from fractions import Fraction
 int_id=1 #identifier for integers
 rat_id=2 #identifier for rationals
 print("enter a rational number!")
+
 x=input()
 rat_input=Fraction(x)
+if rat_input.denominator==1:
+    rat_id=1
 print(str(rat_id)+"#"+bin(rat_input.numerator)+"#"+bin(rat_input.denominator))
 
 
